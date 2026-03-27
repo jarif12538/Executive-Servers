@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Responsive Test | Executive Servers</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  :root {
+    --gold: #C9A84C;
+    --dark: #0F1117;
+    --white: #F8F6F2;
+    --muted: #9AA0B2;
+  }
+  
+  body {
+    background: var(--dark);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 60px;
+    background: rgba(15, 17, 23, 0.85);
+    border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.2s;
+    cursor: pointer;
+  }
+  
+  .logo:hover {
+    opacity: 0.8;
+  }
+  
+  .logo span {
+    color: var(--gold);
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+  
+  .nav-cta {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .nav-cta a {
+    padding: 9px 22px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  
+  .btn-outline {
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    background: transparent;
+  }
+  
+  .btn-solid {
+    background: var(--gold);
+    color: var(--dark);
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none !important;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 101;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  
+  .hamburger span {
+    width: 24px;
+    height: 2px;
+    background: var(--gold);
+    transition: all 0.3s ease;
+  }
+  
+  .hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+  
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+  
+  /* Mobile Menu */
+  .mobile-menu {
+    display: none !important;
+    position: fixed;
+    top: 65px;
+    left: 0;
+    right: 0;
+    background: rgba(24, 28, 39, 0.98);
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+    border-top: 1px solid rgba(201, 168, 76, 0.15);
+    z-index: 99;
+  }
+  
+  .mobile-menu.open {
+    display: flex !important;
+  }
+  
+  .mobile-nav-links {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .mobile-nav-links li {
+    border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+  }
+  
+  .mobile-nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: block;
+    padding: 12px 0;
+  }
+  
+  .mobile-nav-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .mobile-nav-cta a {
+    padding: 11px 16px !important;
+    text-align: center;
+  }
+  
+  /* Content */
+  main {
+    margin-top: 80px;
+    padding: 40px;
+  }
+  
+  .test-info {
+    background: rgba(201, 168, 76, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .test-info h2 {
+    margin-bottom: 10px;
+    color: var(--gold);
+  }
+  
+  .test-info p {
+    margin: 8px 0;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    nav {
+      padding: 18px 30px;
+    }
+    
+    .nav-links {
+      display: none !important;
+    }
+    
+    .nav-cta {
+      display: none !important;
+    }
+    
+    .hamburger {
+      display: flex !important;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      padding: 16px 20px;
+    }
+    
+    .logo {
+      font-size: 1.2rem;
+    }
+    
+    main {
+      padding: 30px 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    nav {
+      padding: 14px 16px;
+    }
+    
+    .logo {
+      font-size: 1rem;
+    }
+    
+    main {
+      padding: 20px 16px;
+    }
+    
+    .test-info {
+      padding: 16px;
+    }
+    
+    .test-info h2 {
+      font-size: 1.1rem;
+    }
+    
+    .test-info p {
+      font-size: 0.9rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo">Executive-<span>Servers</span></a>
+
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Industries</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+
+  <div class="nav-cta">
+    <a href="#" class="btn-outline">Find a Job</a>
+    <a href="#" class="btn-solid">Hire Staff</a>
+  </div>
+
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Industries</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <div class="mobile-nav-cta">
+      <a href="#" class="btn-outline">Find a Job</a>
+      <a href="#" class="btn-solid">Hire Staff</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="test-info">
+    <h2>✓ Responsive Design Test Page</h2>
+    <p><strong>Viewport Width:</strong> <span id="viewportWidth"></span>px</p>
+    <p><strong>Status:</strong> <span id="status"></span></p>
+    <p>👉 <strong>On Mobile:</strong> Click the hamburger menu (☰) to toggle navigation</p>
+    <p>👉 <strong>On Desktop (>1024px):</strong> Full navigation menu should be visible</p>
+    <p style="margin-top: 15px; color: var(--gold);">If you see the hamburger menu on mobile and the menu works when clicked, the responsive design is working!</p>
+  </div>
+
+  <div class="test-info">
+    <h2>Testing Mobile Responsiveness</h2>
+    <p><strong>What to test:</strong></p>
+    <ul style="margin-left: 20px;">
+      <li>Hamburger menu should appear on screens smaller than 1024px</li>
+      <li>Clicking hamburger should toggle the menu open/close</li>
+      <li>Full nav menu should hide on mobile, tablet</li>
+      <li>Mobile menu should display as a dropdown below navbar</li>
+    </ul>
+  </div>
+
+  <div class="test-info">
+    <h2>Current Page Status</h2>
+    <p id="debugInfo">Loading...</p>
+  </div>
+</main>
+
+<script>
+  // Display viewport width
+  function updateViewport() {
+    const width = window.innerWidth;
+    document.getElementById('viewportWidth').textContent = width;
+    
+    // Update status
+    let status = '';
+    if (width < 600) {
+      status = '📱 Mobile (< 600px) - Hamburger menu SHOULD appear';
+    } else if (width < 1024) {
+      status = '📱 Tablet (600px - 1024px) - Hamburger menu SHOULD appear';
+    } else {
+      status = '🖥️ Desktop (> 1024px) - Full nav menu SHOULD appear';
+    }
+    document.getElementById('status').textContent = status;
+  }
+  
+  window.addEventListener('resize', updateViewport);
+  updateViewport();
+
+  // Mobile menu toggle
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+
+    const mobileNavLinks = mobileMenu.querySelectorAll('a');
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+      });
+    });
+
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('nav')) {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+      }
+    });
+
+    document.getElementById('debugInfo').innerHTML = '✓ Mobile menu JavaScript loaded successfully<br>Hamburger menu element: FOUND<br>Mobile menu element: FOUND';
+  } else {
+    document.getElementById('debugInfo').innerHTML = '❌ ERROR: Mobile menu elements not found!<br>' + 
+      (hamburger ? '' : 'Hamburger element: NOT FOUND<br>') +
+      (mobileMenu ? '' : 'Mobile menu element: NOT FOUND<br>');
+  }
+</script>
+
+</body>
+</html>
