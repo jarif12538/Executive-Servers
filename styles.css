@@ -67,6 +67,10 @@ nav {
 }
 .nav-links { display: flex; gap: 36px; list-style: none; }
 .nav-links > li { position: relative; }
+.nav-links > li.has-dropdown {
+  padding-bottom: 14px;
+  margin-bottom: -14px;
+}
 .nav-links a {
   color: var(--muted); text-decoration: none;
   font-size: 0.88rem; font-weight: 500; letter-spacing: 0.06em;
@@ -78,7 +82,7 @@ nav {
   align-items: center;
   gap: 6px;
 }
-/* ── dropdown  ─MENU─ */
+/* Dropdown menu */
 .has-dropdown > a::after {
   content: "";
   width: 6px;
@@ -92,7 +96,7 @@ nav {
   list-style: none;
   position: absolute;
   left: 0;
-  top: 100%;
+  top: calc(100% + 4px);
   min-width: 320px;
   padding: 10px;
   border: 1px solid rgba(var(--brand-rgb), 0.18);
@@ -106,6 +110,8 @@ nav {
   transform: translateY(10px);
   transition: opacity 0.24s ease, transform 0.24s ease, visibility 0s linear 0.24s;
   z-index: 200;
+  max-height: min(72vh, 420px);
+  overflow-y: auto;
 }
 .has-dropdown:hover > .nav-dropdown,
 .has-dropdown:focus-within > .nav-dropdown {
@@ -118,6 +124,15 @@ nav {
 .has-dropdown:hover > a::after,
 .has-dropdown:focus-within > a::after {
   transform: rotate(225deg) translateY(-1px);
+}
+.has-dropdown:hover::before,
+.has-dropdown:focus-within::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 320px;
+  height: 16px;
 }
 .nav-dropdown li + li {
   margin-top: 2px;
@@ -139,6 +154,10 @@ nav {
   color: var(--white);
   background: rgba(var(--brand-rgb), 0.12);
   outline: none;
+}
+.service-card[id],
+.industry-pill[id] {
+  scroll-margin-top: 110px;
 }
 .nav-cta {
   display: flex; gap: 12px;
