@@ -66,12 +66,80 @@ nav {
   color: var(--gold);
 }
 .nav-links { display: flex; gap: 36px; list-style: none; }
+.nav-links > li { position: relative; }
 .nav-links a {
   color: var(--muted); text-decoration: none;
   font-size: 0.88rem; font-weight: 500; letter-spacing: 0.06em;
   text-transform: uppercase; transition: color 0.2s;
 }
 .nav-links a:hover { color: var(--gold); }
+.has-dropdown > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+/* ── dropdown  ─MENU─ */
+.has-dropdown > a::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid rgba(var(--brand-rgb), 0.75);
+  border-bottom: 1px solid rgba(var(--brand-rgb), 0.75);
+  transform: rotate(45deg) translateY(-1px);
+  transition: transform 0.2s ease;
+}
+.nav-dropdown {
+  list-style: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  min-width: 320px;
+  padding: 10px;
+  border: 1px solid rgba(var(--brand-rgb), 0.18);
+  border-radius: 8px;
+  background: rgba(14, 14, 14, 0.98);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.42);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity 0.24s ease, transform 0.24s ease, visibility 0s linear 0.24s;
+  z-index: 200;
+}
+.has-dropdown:hover > .nav-dropdown,
+.has-dropdown:focus-within > .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+  transition: opacity 0.24s ease, transform 0.24s ease, visibility 0s linear 0s;
+}
+.has-dropdown:hover > a::after,
+.has-dropdown:focus-within > a::after {
+  transform: rotate(225deg) translateY(-1px);
+}
+.nav-dropdown li + li {
+  margin-top: 2px;
+}
+.nav-dropdown a {
+  display: block;
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.nav-dropdown a:hover,
+.nav-dropdown a:focus-visible {
+  color: var(--white);
+  background: rgba(var(--brand-rgb), 0.12);
+  outline: none;
+}
 .nav-cta {
   display: flex; gap: 12px;
 }
@@ -335,6 +403,8 @@ body.standalone-page .services-header {
   padding: 44px 36px;
   border: 1px solid rgba(var(--brand-rgb), 0.14);
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
   transition: background 0.3s, transform 0.25s, border-color 0.25s, box-shadow 0.25s;
   cursor: pointer;
 }
@@ -349,11 +419,20 @@ body.standalone-page .services-header {
   display: flex; align-items: center; justify-content: center;
 }
 .service-icon svg { width: 36px; height: 36px; stroke: var(--gold); fill: none; stroke-width: 1.5; }
+.service-icon svg[fill="currentColor"] {
+  fill: var(--gold);
+  stroke: none;
+}
 .service-card h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.25rem; font-weight: 600; margin-bottom: 12px;
 }
-.service-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.65; }
+.service-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.65; margin-bottom: 20px; }
+.service-card br { display: none; }
+.service-card .btn-outline {
+  margin-top: auto;
+  align-self: flex-start;
+}
 .service-arrow {
   margin-top: 24px; color: var(--gold); font-size: 0.8rem;
   letter-spacing: 0.1em; text-transform: uppercase;
@@ -535,8 +614,11 @@ body.standalone-page .service-card:nth-child(5),
 body.standalone-page .industry-pill:nth-child(5) { animation-delay: 0.32s; }
 body.standalone-page .service-card:nth-child(6),
 body.standalone-page .industry-pill:nth-child(6) { animation-delay: 0.38s; }
+body.standalone-page .service-card:nth-child(7),
 body.standalone-page .industry-pill:nth-child(7) { animation-delay: 0.44s; }
+body.standalone-page .service-card:nth-child(8),
 body.standalone-page .industry-pill:nth-child(8) { animation-delay: 0.5s; }
+body.standalone-page .service-card:nth-child(9),
 body.standalone-page .industry-pill:nth-child(9) { animation-delay: 0.56s; }
 body.standalone-page .industry-pill:nth-child(10) { animation-delay: 0.62s; }
 @media (max-width: 1024px) {

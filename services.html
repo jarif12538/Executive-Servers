@@ -15,8 +15,35 @@
 
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="industries.html">Industries</a></li>
+    <li class="has-dropdown">
+      <a href="services.html" aria-haspopup="true">Services</a>
+      <ul class="nav-dropdown">
+        <li><a href="services.html#temporary-contract-staffing">Temporary &amp; Contract Staffing</a></li>
+        <li><a href="services.html#full-department-outsourcing">Full Department Outsourcing</a></li>
+        <li><a href="services.html#direct-hire-placement">Direct Hire Placement</a></li>
+        <li><a href="services.html#janitorial-cleaning">Janitorial &amp; Cleaning</a></li>
+        <li><a href="services.html#luxury-task-force">Luxury Task Force</a></li>
+        <li><a href="services.html#hospitality-rpo">Hospitality RPO</a></li>
+        <li><a href="services.html#events">Events</a></li>
+        <li><a href="services.html#restaurant-cleaning">Restaurant Cleaning</a></li>
+        <li><a href="services.html#hotel-renovation-cleaning">Hotel Renovation Cleaning</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <a href="industries.html" aria-haspopup="true">Industries</a>
+      <ul class="nav-dropdown">
+        <li><a href="industries.html#hotels-resorts">Hotels &amp; Resorts</a></li>
+        <li><a href="industries.html#casinos-gaming">Casinos &amp; Gaming</a></li>
+        <li><a href="industries.html#fine-dining">Fine Dining</a></li>
+        <li><a href="industries.html#events-banquets">Events &amp; Banquets</a></li>
+        <li><a href="industries.html#sports-stadiums">Sports &amp; Stadiums</a></li>
+        <li><a href="industries.html#senior-living">Senior Living</a></li>
+        <li><a href="industries.html#healthcare">Healthcare</a></li>
+        <li><a href="industries.html#cruise-lines">Cruise Lines</a></li>
+        <li><a href="industries.html#universities">Universities</a></li>
+        <li><a href="industries.html#light-industrial">Light Industrial</a></li>
+      </ul>
+    </li>
     <li><a href="how_it_works.html">How It Works</a></li>
     <li><a href="testimonials.html">Testimonials</a></li>
     <li><a href="#">About</a></li>
@@ -60,7 +87,7 @@
   </div>
 
   <div class="services-grid">
-    <div class="service-card">
+    <div class="service-card" id="temporary-contract-staffing">
       <div class="service-icon">
         <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
       </div>
@@ -70,7 +97,7 @@
       <a href="#" class="btn-outline">Apply Now</a>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" id="full-department-outsourcing">
       <div class="service-icon">
         <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
       </div>
@@ -80,7 +107,7 @@
       <a href="#" class="btn-outline">Apply Now</a>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" id="direct-hire-placement">
       <div class="service-icon">
         <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
       </div>
@@ -90,7 +117,7 @@
       <a href="#" class="btn-outline">Apply Now</a>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" id="janitorial-cleaning">
       <div class="service-icon">
         <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
       </div>
@@ -100,7 +127,7 @@
       <a href="#" class="btn-outline">Apply Now</a>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" id="luxury-task-force">
       <div class="service-icon">
         <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
       </div>
@@ -110,7 +137,7 @@
       <a href="#" class="btn-outline">Apply Now</a>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" id="hospitality-rpo">
       <div class="service-icon">
         <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
       </div>
@@ -120,7 +147,7 @@
       <a href="#" class="btn-outline">Apply Now</a>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" id="events">
       <div class="service-icon">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V10h14zm0-12H5V6h14z"/></svg>
       </div>
@@ -130,7 +157,7 @@
       <a href="#" class="btn-outline">Apply Now</a>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" id="restaurant-cleaning">
       <div class="service-icon">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 2v11a3 3 0 0 0 2 2.83V22h2v-6.17A3 3 0 0 0 13 13V2h-2v5H9V2H7zm10 0c-2.21 0-4 1.79-4 4v6a4 4 0 0 0 4 4v6h2V2h-2z"/></svg>
       </div>
@@ -140,7 +167,7 @@
       <a href="#" class="btn-outline">Apply Now</a>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" id="hotel-renovation-cleaning">
       <div class="service-icon">
         <svg viewBox="0 0 24 24" fill="currentColor"> <path d="M12 2l2 4 4 2-4 2-2 4-2-4-4-2 4-2z"/></svg>
       </div>
