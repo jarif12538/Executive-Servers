@@ -825,24 +825,37 @@ footer {
 body.standalone-page .service-card,
 body.standalone-page .industry-pill,
 body.standalone-page .testi-card,
-body.standalone-page .step {
+body.standalone-page .step,
+body.standalone-page .about-point,
+body.standalone-page .about-panel,
+body.standalone-page .contact-card,
+body.standalone-page .location-card {
   animation: fadeUp 0.7s ease both;
 }
 body.standalone-page .service-card:nth-child(1),
 body.standalone-page .industry-pill:nth-child(1),
 body.standalone-page .testi-card:nth-child(1),
-body.standalone-page .step:nth-child(1) { animation-delay: 0.08s; }
+body.standalone-page .step:nth-child(1),
+body.standalone-page .about-point:nth-child(1),
+body.standalone-page .contact-card:nth-child(1),
+body.standalone-page .location-card:nth-child(1) { animation-delay: 0.08s; }
 body.standalone-page .service-card:nth-child(2),
 body.standalone-page .industry-pill:nth-child(2),
 body.standalone-page .testi-card:nth-child(2),
-body.standalone-page .step:nth-child(2) { animation-delay: 0.14s; }
+body.standalone-page .step:nth-child(2),
+body.standalone-page .about-point:nth-child(2),
+body.standalone-page .contact-card:nth-child(2),
+body.standalone-page .location-card:nth-child(2) { animation-delay: 0.14s; }
 body.standalone-page .service-card:nth-child(3),
 body.standalone-page .industry-pill:nth-child(3),
 body.standalone-page .testi-card:nth-child(3),
-body.standalone-page .step:nth-child(3) { animation-delay: 0.2s; }
+body.standalone-page .step:nth-child(3),
+body.standalone-page .about-point:nth-child(3),
+body.standalone-page .contact-card:nth-child(3) { animation-delay: 0.2s; }
 body.standalone-page .service-card:nth-child(4),
 body.standalone-page .industry-pill:nth-child(4),
 body.standalone-page .step:nth-child(4) { animation-delay: 0.26s; }
+body.standalone-page .about-panel { animation-delay: 0.26s; }
 body.standalone-page .service-card:nth-child(5),
 body.standalone-page .industry-pill:nth-child(5) { animation-delay: 0.32s; }
 body.standalone-page .service-card:nth-child(6),
