@@ -644,6 +644,58 @@ body.standalone-page .about-section-head .section-sub {
   fill: var(--gold);
   stroke: none;
 }
+.service-card-media {
+  position: relative;
+  margin: -44px -36px -44px -36px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+.service-card-image {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+.service-card-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  padding: 18px 18px 26px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.84) 100%);
+}
+.service-card-overlay-text {
+  color: #fff;
+  min-width: 0;
+}
+.service-card-overlay-text h3 {
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+.service-card-overlay-text p {
+  color: rgba(255, 255, 255, 0.97);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+.service-card-badge {
+  display: inline-flex;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.service-card-overlay-button {
+  align-self: flex-start;
+  margin-top: 6px;
+  border-color: rgba(255, 255, 255, 0.9);
+  color: #fff;
+  background: rgba(0, 0, 0, 0.28);
+}
 .service-card h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.25rem; font-weight: 600; margin-bottom: 12px;
@@ -943,6 +995,19 @@ body.standalone-page .industry-pill:nth-child(10) { animation-delay: 0.62s; }
   .section-label { font-size: 0.65rem; margin-bottom: 12px; }
   .services-grid { grid-template-columns: 1fr; }
   .service-card { padding: 28px 20px; }
+  .service-card-media {
+    margin: -28px -20px -28px -20px;
+    border-radius: 6px 6px 0 0;
+  }
+  .service-card-image { height: 260px; }
+  .service-card-overlay {
+    padding: 14px 14px 18px;
+    gap: 10px;
+  }
+  .service-card-overlay-text h3 { font-size: 1.35rem; margin-bottom: 8px; }
+  .service-card-overlay-text p { font-size: 0.8rem; line-height: 1.45; margin-bottom: 12px; }
+  .service-card-badge { font-size: 0.6rem; padding: 5px 9px; margin-bottom: 8px; }
+  .service-card-overlay-button { margin-top: 2px; font-size: 0.75rem; padding: 10px 14px; }
   .service-icon { width: 40px; height: 40px; margin-bottom: 16px; }
   .service-icon svg { width: 28px; height: 28px; }
   .service-card h3 { font-size: 1.1rem; margin-bottom: 10px; }
