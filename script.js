@@ -56,6 +56,21 @@ document.addEventListener('DOMContentLoaded', function() {
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
 
+  // Make service cards open their detail pages reliably when the media area is clicked
+  const serviceMediaCards = document.querySelectorAll('.service-card-media[data-href]');
+  serviceMediaCards.forEach(card => {
+    card.addEventListener('click', function(e) {
+      if (e.target.closest('a.btn-outline')) {
+        return;
+      }
+
+      const href = this.getAttribute('data-href');
+      if (href) {
+        window.location.href = href;
+      }
+    });
+  });
+
   if (hamburger && mobileMenu) {
     // Toggle menu on hamburger click
     hamburger.addEventListener('click', function(e) {

@@ -1,0 +1,292 @@
+{
+  "services": [
+    {
+      "id": "banquet-captain",
+      "name": "Banquet Captain",
+      "image": "assets/Banquet%20Captain.jpg",
+      "shortDescription": "Elevate your events with dependable banquet staff—deployed quickly, trained professionally, and ready to perform.",
+      "fullDescription": "Our Banquet Captains are seasoned professionals who lead service teams with precision and expertise. They manage event flow, coordinate staff, ensure guest satisfaction, and maintain the highest standards of hospitality.",
+      "keyResponsibilities": [
+        "Lead and supervise banquet service teams",
+        "Coordinate with kitchen and event planning staff",
+        "Manage guest experience and handle special requests",
+        "Train and mentor service staff during events",
+        "Ensure adherence to service standards and timing",
+        "Monitor event setup, service flow, and breakdown"
+      ],
+      "requiredSkills": [
+        "5+ years hospitality service experience",
+        "Strong leadership and communication skills",
+        "Knowledge of service protocols and etiquette",
+        "Ability to manage high-pressure situations",
+        "Excellent problem-solving abilities",
+        "Professional appearance and demeanor"
+      ],
+      "benefits": [
+        "Premium hourly rates",
+        "Flexible scheduling options",
+        "Opportunity to work prestigious events",
+        "Career advancement opportunities",
+        "Professional training and development"
+      ],
+      "industries": [
+        "Hotels & Resorts",
+        "Fine Dining",
+        "Events & Banquets",
+        "Cruise Lines"
+      ]
+    },
+    {
+      "id": "banquet-servers",
+      "name": "Banquet Servers",
+      "image": "assets/Banquet%20Servers.png",
+      "shortDescription": "Professional Banquet Servers you can count on. Skilled in handling events with care and precision. Flexible support whenever you need it.",
+      "fullDescription": "Our Banquet Servers are trained professionals who deliver exceptional service during all types of events. From cocktail receptions to formal dinners, they ensure seamless service with attention to detail and guest satisfaction.",
+      "keyResponsibilities": [
+        "Deliver food and beverages to guests with professionalism",
+        "Set tables according to service standards",
+        "Clear and reset tables between courses",
+        "Address guest requests and special needs",
+        "Maintain proper etiquette and presentation",
+        "Support event coordinators and banquet captains"
+      ],
+      "requiredSkills": [
+        "2+ years food service experience",
+        "Knowledge of proper table service techniques",
+        "Ability to work efficiently in fast-paced environments",
+        "Strong customer service skills",
+        "Physical stamina and attention to detail",
+        "Professional appearance"
+      ],
+      "benefits": [
+        "Competitive hourly wages",
+        "Regular event opportunities",
+        "Flexible scheduling",
+        "Networking opportunities",
+        "On-the-job training available"
+      ],
+      "industries": [
+        "Hotels & Resorts",
+        "Fine Dining",
+        "Events & Banquets",
+        "Casinos & Gaming"
+      ]
+    },
+    {
+      "id": "housekeeping",
+      "name": "Housekeeping",
+      "image": "assets/housekeeping.png",
+      "shortDescription": "Skilled Housekeeping staff delivering high standards of cleanliness. From daily upkeep to deep cleaning. Flexible support for any requirement.",
+      "fullDescription": "Our Housekeeping professionals maintain pristine environments in luxury hospitality settings. Whether for daily operations or specialized cleaning projects, they ensure properties meet the highest cleanliness standards.",
+      "keyResponsibilities": [
+        "Clean and maintain guest rooms and common areas",
+        "Perform daily cleaning routines and deep cleaning projects",
+        "Change linens and restock supplies",
+        "Inspect rooms for cleanliness and maintenance issues",
+        "Handle guest requests and rush room readiness",
+        "Maintain inventory of cleaning supplies and equipment"
+      ],
+      "requiredSkills": [
+        "1+ years housekeeping experience",
+        "Knowledge of cleaning procedures and products",
+        "Physical ability to perform cleaning tasks",
+        "Attention to detail and quality standards",
+        "Time management and organizational skills",
+        "Reliable and professional demeanor"
+      ],
+      "benefits": [
+        "Steady employment opportunities",
+        "Flexible shift options (days, nights, weekends)",
+        "Access to professional cleaning equipment",
+        "Competitive wages",
+        "Potential for full-time positions"
+      ],
+      "industries": [
+        "Hotels & Resorts",
+        "Senior Living",
+        "Healthcare",
+        "Universities"
+      ]
+    },
+    {
+      "id": "stewards",
+      "name": "Stewards",
+      "image": "assets/steward.jpeg",
+      "shortDescription": "Experienced Stewards keeping food service areas clean and efficient. From dishwashing to kitchen support. Consistent, dependable, and ready to assist.",
+      "fullDescription": "Our Stewards are essential to any hospitality kitchen operation. They ensure kitchen cleanliness, handle dishwashing, assist with food preparation, and support the back-of-house operations that keep service running smoothly.",
+      "keyResponsibilities": [
+        "Operate commercial dishwashing equipment",
+        "Maintain kitchen cleanliness and sanitation standards",
+        "Handle pots, pans, utensils, and glassware",
+        "Assist with food preparation and storage",
+        "Remove trash and maintain proper waste disposal",
+        "Support kitchen staff during service"
+      ],
+      "requiredSkills": [
+        "1+ years food service or kitchen experience",
+        "Knowledge of food safety and sanitation",
+        "Physical stamina for standing and repetitive tasks",
+        "Ability to work in fast-paced kitchens",
+        "Attention to cleanliness and organization",
+        "Teamwork and communication skills"
+      ],
+      "benefits": [
+        "Flexible scheduling",
+        "Competitive hourly rates",
+        "Opportunity for permanent positions",
+        "Training in food safety standards",
+        "Regular, consistent work"
+      ],
+      "industries": [
+        "Hotels & Resorts",
+        "Fine Dining",
+        "Casinos & Gaming",
+        "Universities"
+      ]
+    },
+    {
+      "id": "bartenders",
+      "name": "Bartenders",
+      "image": "assets/Bartenders.png",
+      "shortDescription": "More than just drinks—smooth service and great timing behind every counter. Our bartenders handle the rush while keeping guests happy. Ideal for events, bars, and private setups.",
+      "fullDescription": "Our Bartenders are skilled professionals who craft quality beverages while delivering exceptional guest service. They manage high-volume service, handle cash operations, and create memorable experiences at bars, events, and private functions.",
+      "keyResponsibilities": [
+        "Mix and serve cocktails, beer, and wine to professional standards",
+        "Manage bar operations and cleanliness",
+        "Take orders and manage guest interactions",
+        "Handle cash and payment processing",
+        "Maintain inventory and monitor stock levels",
+        "Follow proper pouring and portion control standards"
+      ],
+      "requiredSkills": [
+        "2+ years bartending experience",
+        "Mixology knowledge and drink recipes",
+        "Liquor license certification (or willingness to obtain)",
+        "Strong customer service and communication skills",
+        "Cash handling and basic math abilities",
+        "Ability to multitask in high-volume settings"
+      ],
+      "benefits": [
+        "Premium hourly rates plus tips",
+        "Flexible event-based scheduling",
+        "Opportunity to work high-end venues",
+        "Professional development opportunities",
+        "Networking with hospitality professionals"
+      ],
+      "industries": [
+        "Fine Dining",
+        "Casinos & Gaming",
+        "Events & Banquets",
+        "Cruise Lines"
+      ]
+    },
+    {
+      "id": "security-services",
+      "name": "Security Services",
+      "image": "assets/Security%20Services.jpg",
+      "shortDescription": "Security that stays alert so your space stays calm. From entry points to full-site coverage, everything is under watch. Reliable presence for events, venues, and properties.",
+      "fullDescription": "Our Security Services provide professional, trained personnel to protect your guests, staff, and assets. From discreet event security to comprehensive property protection, our team ensures safety with a professional presence.",
+      "keyResponsibilities": [
+        "Monitor entry and exit points",
+        "Conduct security patrols and inspections",
+        "Respond to security incidents and emergencies",
+        "Check credentials and manage access control",
+        "Observe and report suspicious activity",
+        "Assist guests and provide directions as needed"
+      ],
+      "requiredSkills": [
+        "Security certification or training preferred",
+        "Strong observation and communication skills",
+        "Ability to remain calm under pressure",
+        "Physical fitness and alertness",
+        "Knowledge of emergency procedures",
+        "Professional, courteous demeanor"
+      ],
+      "benefits": [
+        "Competitive wages",
+        "Flexible scheduling",
+        "Professional training programs",
+        "Opportunity for permanent positions",
+        "Professional uniform provided"
+      ],
+      "industries": [
+        "Hotels & Resorts",
+        "Events & Banquets",
+        "Casinos & Gaming",
+        "Sports & Stadiums"
+      ]
+    },
+    {
+      "id": "banquet-housemen",
+      "name": "Banquet Housemen",
+      "image": "assets/Banquet%20Housemen.jpg",
+      "shortDescription": "Turning empty spaces into ready-to-go event setups. From early setup to final breakdown, every detail is covered. Reliable support that keeps everything moving smoothly.",
+      "fullDescription": "Our Banquet Housemen are the backbone of event logistics. They handle the physical setup and breakdown of event spaces, move equipment, arrange furniture, and ensure venues are ready for flawless service.",
+      "keyResponsibilities": [
+        "Set up tables, chairs, and event equipment",
+        "Arrange and configure event spaces per specifications",
+        "Move and store furniture and equipment",
+        "Handle decorations and stage setup",
+        "Perform breakdown and cleanup after events",
+        "Maintain cleanliness of event spaces throughout service"
+      ],
+      "requiredSkills": [
+        "1+ years event setup or hospitality experience",
+        "Physical strength and ability to lift heavy items",
+        "Attention to detail and ability to follow instructions",
+        "Teamwork and coordination abilities",
+        "Knowledge of proper equipment handling",
+        "Reliability and work ethic"
+      ],
+      "benefits": [
+        "Steady event-based work",
+        "Competitive hourly wages",
+        "Flexible scheduling",
+        "Opportunity for full-time employment",
+        "Team-oriented work environment"
+      ],
+      "industries": [
+        "Hotels & Resorts",
+        "Events & Banquets",
+        "Casinos & Gaming",
+        "Universities"
+      ]
+    },
+    {
+      "id": "resto-food-runner",
+      "name": "Resto Food Runner",
+      "image": "assets/Resto%20Food%20Runner.png",
+      "shortDescription": "Fast hands, clear focus, and perfect timing. Making sure every plate reaches the right table without confusion. Keeping the service running at its best.",
+      "fullDescription": "Our Food Runners are the critical link between kitchen and dining room. They ensure dishes reach tables promptly and accurately, maintain table cleanliness, and support the entire service flow during busy service periods.",
+      "keyResponsibilities": [
+        "Deliver food orders from kitchen to tables accurately",
+        "Clear plates and reset tables between courses",
+        "Communicate between kitchen and service staff",
+        "Assist with table maintenance and cleanliness",
+        "Manage tray handling and proper plate placement",
+        "Respond quickly to guest and server requests"
+      ],
+      "requiredSkills": [
+        "1+ years food service or restaurant experience",
+        "Knowledge of proper food handling and service",
+        "Speed and accuracy in multitasking",
+        "Ability to work in high-energy environments",
+        "Good communication and teamwork skills",
+        "Physical ability to carry multiple plates"
+      ],
+      "benefits": [
+        "Competitive hourly wages plus tips",
+        "Flexible shift options",
+        "Regular work availability",
+        "Career path to server or leadership roles",
+        "Fast-paced, dynamic work environment"
+      ],
+      "industries": [
+        "Fine Dining",
+        "Casual Dining",
+        "Hotels & Resorts",
+        "Events & Banquets"
+      ]
+    }
+  ]
+}
