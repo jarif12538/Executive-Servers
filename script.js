@@ -3,6 +3,10 @@
 // Smooth scroll for navigation links
 document.addEventListener('DOMContentLoaded', function() {
 
+  if (document.body.classList.contains('standalone-page') && !window.location.hash) {
+    window.scrollTo(0, 0);
+  }
+
   // Smooth scrolling for anchor links
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
 

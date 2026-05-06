@@ -7,90 +7,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="styles.css?v=20260328-2"/>
 <style>
-  /* Page-scoped palette (Option A) - applied only inside the .service-skin wrapper
-     This prevents nav/footer from inheriting the page-specific variables. */
-  .service-skin{
-    --gold: #FFC857;
-    --gold-light: #FFE9B6;
-    --brand-rgb: 74, 158, 255;
-    --dark: #060e1e;
-    --dark2: #0d1e38;
-    --dark3: #112244;
-    --muted: #9fb6d8;
-    position: relative;
-    isolation: isolate;
-    background: linear-gradient(138deg, #060e1e 0%, #0d1e38 48%, #112244 100%);
-  }
-
-  .service-skin::before{
-    content: "";
-    position: absolute; inset: 0; z-index: 0; pointer-events: none;
-    background: radial-gradient(circle at 50% -10%, rgba(var(--brand-rgb), 0.06), transparent 48%), linear-gradient(115deg, rgba(255,255,255,0.015), rgba(255,255,255,0));
-  }
-
-  /* Reuse site variables from styles.css for consistent about-page look */
-
-  .service-detail-hero{
-    height:500px;
-    position:relative;
-    overflow:hidden;
-    background:
-      radial-gradient(circle at 72% 28%, rgba(var(--brand-rgb), 0.09), transparent 46%),
-      linear-gradient(138deg, #060e1e 0%, #0d1e38 48%, #112244 100%);
-  }
-
-  .service-detail-hero img{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    opacity:0.7;
-  }
-
-  .service-detail-hero-overlay{
-    position:absolute;inset:0;background:linear-gradient(135deg, rgba(26,26,26,0.55), rgba(45,45,45,0.25));display:flex;align-items:flex-end;padding:60px;
-  }
-
-  .service-detail-hero-content h1{
-    font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,3.8rem);color:var(--white);margin:0;font-weight:700;text-shadow:0 2px 18px rgba(0,0,0,0.35);
-  }
-
-  .service-detail-content{max-width:1200px;margin:0 auto;padding:80px 60px 90px}
-
-  .service-detail-section{margin-bottom:56px}
-
-  .service-detail-section h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,2.4vw,2.1rem);color:var(--white);margin-bottom:18px}
-
-  .service-detail-section p{font-size:1.05rem;line-height:1.85;color:var(--muted);margin-bottom:15px}
-
-  .detail-list{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px}
-
-  .detail-list li{padding:14px 18px 14px 30px;position:relative;color:var(--muted);font-size:1rem;line-height:1.65;background:rgba(var(--brand-rgb),0.04);border:1px solid rgba(var(--brand-rgb),0.08);border-radius:8px}
-  .detail-list li:before{content:"✓";position:absolute;left:14px;top:14px;color:var(--gold);font-weight:bold}
-
-  .detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:20px}
-
-  .detail-card{background:var(--dark2);padding:28px;border-radius:12px;border:1px solid rgba(var(--brand-rgb),0.1);box-shadow:inset 0 1px 0 rgba(255,255,255,0.02)}
-  .detail-card h3{font-family:'Playfair Display',serif;color:var(--white);font-size:1.4rem;margin-bottom:14px}
-
-  /* Section-specific touch to mirror about page */
-  .overview{background:linear-gradient(180deg,#112244 0%,#0d1e38 100%);padding:28px;border-radius:10px;border:1px solid rgba(var(--brand-rgb),0.08)}
-  .offer .detail-card{background:var(--dark2)}
-  .responsibilities .detail-list,.skills .detail-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-  .why-choose .detail-list li{background:var(--dark2);padding:12px;border-radius:8px;border:1px solid rgba(var(--brand-rgb),0.06)}
-  .ideal-for .detail-list{display:flex;flex-wrap:wrap;gap:10px}
-  .ideal-for .detail-list li{background:rgba(var(--brand-rgb),0.08);padding:8px 12px;border-radius:999px;color:var(--white);font-weight:600}
-
-  .cta-section{background:linear-gradient(135deg,#1a1a1a 0%,#2d2d2d 100%);color:var(--white);padding:56px;border-radius:12px;margin-top:80px;text-align:center;border:1px solid rgba(var(--brand-rgb),0.14)}
-
-  /* Page-scoped CTA buttons (keeps nav intact) */
-  .service-btn-solid{border:1px solid var(--gold);color:var(--gold);padding:11px 20px;border-radius:6px;background:transparent;text-decoration:none;font-weight:700}
-  .service-btn-solid:hover{background:var(--gold);color:var(--dark)}
-  .service-btn-outline{border:1px solid rgba(var(--brand-rgb),0.12);color:var(--white);padding:10px 18px;border-radius:6px;text-decoration:none}
-  .service-btn-outline:hover{background:rgba(var(--brand-rgb),0.06)}
-
-  @media (max-width:900px){.detail-grid{grid-template-columns:1fr}.responsibilities .detail-list,.skills .detail-list{grid-template-columns:1fr}.service-detail-content{padding:48px 20px}.service-detail-hero{height:420px}}
+  .service-skin{ --gold: #FFC857; --gold-light: #FFE9B6; --brand-rgb: 74, 158, 255; --dark: #060e1e; --dark2: #0d1e38; --dark3: #112244; --muted: #9fb6d8; position:relative; isolation:isolate; background: linear-gradient(138deg, #060e1e 0%, #0d1e38 48%, #112244 100%);} 
+  .service-skin::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(circle at 50% -10%, rgba(var(--brand-rgb),0.06), transparent 48%), linear-gradient(115deg, rgba(255,255,255,0.015), rgba(255,255,255,0));}
 
 </style>
 </head>
@@ -183,13 +101,13 @@
 <div class="service-detail-content">
   
   <!-- OVERVIEW -->
-  <section class="service-detail-section overview">
+  <section class="service-detail-section">
     <h2>Overview</h2>
     <p>Our Banquet Captains are seasoned professionals who lead service teams with precision and expertise. They manage event flow, coordinate staff, ensure guest satisfaction, and maintain the highest standards of hospitality. A true banquet captain is the backbone of exceptional event service, ensuring every detail is executed flawlessly.</p>
   </section>
 
   <!-- OVERVIEW WITH CARDS -->
-  <section class="service-detail-section offer">
+  <section class="service-detail-section">
     <h2>What We Offer</h2>
     <div class="detail-grid">
       <div class="detail-card">
@@ -212,7 +130,7 @@
   </section>
 
   <!-- KEY RESPONSIBILITIES -->
-  <section class="service-detail-section responsibilities">
+  <section class="service-detail-section">
     <h2>Key Responsibilities</h2>
     <ul class="detail-list">
       <li>Lead and supervise banquet service teams</li>
@@ -225,7 +143,7 @@
   </section>
 
   <!-- REQUIRED SKILLS -->
-  <section class="service-detail-section skills">
+  <section class="service-detail-section">
     <h2>Required Skills &amp; Qualifications</h2>
     <ul class="detail-list">
       <li>5+ years hospitality service experience</li>
@@ -238,7 +156,7 @@
   </section>
 
   <!-- WHY CHOOSE US -->
-  <section class="service-detail-section why-choose">
+  <section class="service-detail-section">
     <h2>Why Choose Executive Server for Banquet Captain Roles?</h2>
     <ul class="detail-list">
       <li><strong>Premium Compensation:</strong> Top-tier hourly rates reflecting your leadership expertise</li>
@@ -251,7 +169,7 @@
   </section>
 
   <!-- IDEAL FOR -->
-  <section class="service-detail-section ideal-for">
+  <section class="service-detail-section">
     <h2>Ideal for These Industries</h2>
     <ul class="detail-list">
       <li>Hotels &amp; Resorts</li>
@@ -266,7 +184,7 @@
     <h2>Ready to Lead Events or Need a Banquet Captain?</h2>
     <p style="font-size: 1.1rem; margin-bottom: 30px;">Whether you're an experienced captain looking for opportunities or an event venue in need of leadership, we connect the best talent with the best opportunities.</p>
     <div class="cta-buttons">
-      <a href="about.html#contact" class="service-btn-outline">Request Captain</a>
+      <a href="about.html#contact" class="btn-outline">Request Captain</a>
     </div>
   </section>
 
